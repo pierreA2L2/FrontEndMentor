@@ -1,0 +1,105 @@
+/* Import de la police depuis les serveurs de google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Le reset CSS : on réinitialise les comportements par défaut
+du navigateur. On utilise le sélecteur universel * et donc mettre pour toutes les
+balises, les marges etc à 0 */
+
+* {
+    margin : 0; /* Pour toutes les balises, les marges exterieures à 0*/
+    padding : 0; /* Pour toutes les balises, les marges intérieures à 0*/
+    box-sizing : border-box; /* Pour toutes les balises, on prend en compte 
+    les bordures et le padding dans le calcul de la taille de l'élément HTML */
+}
+
+body{
+    font-family : 'Inter'; /* On spécifié la police par défaut pour tout le doc */
+    font-size : 14px; /* on défini la taille de référence pour la police */
+    /* On définit des variables pour les couleurs : */
+    --green : hsl(75, 94%, 57%);
+    --white : hsl(0, 0%, 100%);
+    --grey700 :  hsl(0, 0%, 20%);
+    --grey800 : hsl(0, 0%, 12%);
+    --grey900 : hsl(0, 0%, 8%);
+}
+
+
+#wrapper {
+    background-color : var(--grey900); /*On récupère la valeur de --grey900 */
+    width : 100vw; /* la largeur de la balise wrapper est définie à 100% 
+    de la largeur d'affichage du navigateur*/
+
+    height: 100vh; /* la hauteur de la balise wrapper est définie à 100% 
+    de la hauteur d'affichage du navigateur*/
+
+    display : flex; /* On définit le display du wrapper en flex pour pouvoir
+    centrer horizontalement et verticalement son élément enfant */
+
+    justify-content : center; /* on centre sur l'axe principale 
+    (ici c'est l'horizontal) */
+
+    align-items : center; /* on centre sur l'axe secondaire (ici vertical) */
+
+}
+
+main {
+    width : 375px;
+    padding : 50px 30px; /* Les marges intérieures : 50px en haut et en bas*/
+    background-color : var(--grey800); /*On récupère la valeur de --grey800 
+    pour la mettre en fond de la balise main */
+
+    /* Pour centrer tous les éléments dans main : */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color : var(--white);
+    font-weight : 700; /* on définit à quel point c'est en gras */
+    font-size : 1.5rem; /* On définit la taille du texte à 1 fois et demi la valeur 
+    de référence (14px) */
+    margin-bottom : 10px;
+
+}
+address {
+    color : var(--green);
+    font-style : normal; /* On enlève l'italic par defaut de la balise address */
+    font-weight : 700;
+    margin-bottom : 20px;
+ }
+
+h2 {
+    font-size : 1rem;
+    font-weight : normal;
+    color : var(--white);
+    margin-bottom : 20px;
+}
+
+a{
+    display: block; /* On passe les liens en display block pour qu'ils puissent avoir
+    des propriété de boite : width, padding, margin, etc... */
+
+    background-color : var(--grey700);
+    width:100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color:var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: var(--green);
+    color:var(--grey700);
+}

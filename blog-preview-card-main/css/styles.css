@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+    font-family: Figtree;
+}
+
+#wrapper{
+    background-color: var(--Yellow);
+    width:100vw;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width:375px;
+    background-color: var(--White);
+    border:solid 1px var(--Gray950);
+    border-radius: 15px;
+    padding: 20px 15px;
+    box-shadow: var(--Gray950) 5px 10px;
+}
+.illustration{
+    width:100%;
+    border-radius: 15px;
+}
+h2{
+    font-size: 1rem;
+    background-color: var(--Yellow);
+    padding: 5px 7px;
+    border-radius: 5px;
+    width:fit-content;
+    margin:15px 0;
+}
+.date{
+    color:var(--Gray950);
+    margin:15px 0;
+}
+h1{
+    font-size: 1.5rem;
+    margin:15px 0;
+    font-weight:800;
+}
+a{
+    text-decoration: none;
+    color:var(--Gray950);
+}
+a:hover{
+    color:var(--Yellow);
+}
+.text{
+    margin:15px 0;
+    color:var(--Gray500);
+    line-height: 1.5;
+}
+.author{
+    font-weight: 500;
+    color:var(--Gray950);
+    display:flex;
+    align-items: center;
+}
+.author img{
+    margin-right: 10px;
+    height:2rem;
+}

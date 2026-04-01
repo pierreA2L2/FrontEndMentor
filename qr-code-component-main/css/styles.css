@@ -1,0 +1,51 @@
+/* importer de la police */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Pour appliquer cette police à tout le texte présent dans body */
+body{
+    font-family: Outfit;
+    font-size:15px;
+}
+
+/* Pour tous les éléments, les marges à 0 et le box-sizing à border-box */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: hsl(212, 45%, 89%);
+    /* Centrage des éléments à l'interieur du wrapper : 
+        d'abord définir une largeur et une hauteur
+    */
+    width:100vw;
+    min-height: 100vh;
+    /* Puis le display flex et les alignements horizontaux et verticaux */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    width:375px;
+    padding:20px 15px;
+    border-radius: 15px;
+}
+img{
+    width:100%;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    color:hsl(218, 44%, 22%);
+    margin: 15px 0;
+}
+p{
+    color:hsl(216, 15%, 48%);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
